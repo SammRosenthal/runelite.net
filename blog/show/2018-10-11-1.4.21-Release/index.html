@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="_wxrTRAcgx3bHof630x75_YKSXklUH55NkOAA_5GfmU"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>1.4.21 Release - RuneLite</title><meta name="description" content="Bank tag tabs, master clue 3-step cryptic solutions, partial grand exchange name searching, and various plugin visual improvements"><meta name="author" content="Jordan"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script><script type="text/javascript">!function(i){if(i.search){var a={};i.search.slice(1).split("&").forEach((function(i){var l=i.split("=");a[l[0]]=l.slice(1).join("=").replace(/~and~/g,"&")})),void 0!==a.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(a.p||"")+(a.q?"?"+a.q:"")+i.hash)}}(window.location)</script><link href="/static/css/6.1b1127fd.chunk.css" rel="stylesheet"><link href="/static/css/main.6cca476d.chunk.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/static/css/4.1b00b023.chunk.css"><script charset="utf-8" src="/static/js/4.a9f5c633.chunk.js"></script><script charset="utf-8" src="/static/js/64.1675c36d.chunk.js"></script></head><body><div id="root"><div style="height: 100%;"><div class="fixed-top animated loader" style="display: none;"></div><nav class="navbar navbar-expand-lg fixed-top navbar-dark"><a class="navbar-brand" activeclassname="active" href="/"><img src="/img/runelite_logo_transparent.png" class="icon" alt="RuneLite"> </a><input type="checkbox" id="navbar-check-box"><label for="navbar-check-box" class="navbar-toggler"><span class="navbar-toggler-icon"></span></label><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" activeclassname="active" href="/features">Features</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/blog">Blog</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/pulse">Pulse</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/wiki">Wiki</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown">API</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://static.runelite.net/api/http-service/">RuneLite HTTP API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-api/">RuneLite API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-client/">RuneLite Client API</a></div></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/tag">Tags</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/plugin-hub">Plugin Hub</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="https://www.patreon.com/runelite">Become a patron</a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://runelite.net/discord" title="Discord"><i class="fab fa-discord"></i><span class="d-lg-none"> Discord</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://twitter.com/RuneLiteClient" title="Twitter"><i class="fab fa-twitter"></i><span class="d-lg-none"> Twitter</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://github.com/runelite" title="GitHub"><i class="fab fa-github"></i><span class="d-lg-none"> GitHub</span></a></li><li class="nav-item"><form class="form-inline"><button class="btn btn-primary" type="button">Login</button></form></li></ul></div></nav><div class="container" id="layout"><section id="blog"><div class="content-section"><div class="page-header"><h1>1.4.21 Release</h1><p class="text-muted"><span title="Thu Oct 11 2018 10:00:00 GMT+0000 (Coordinated Universal Time)">2 years ago</span> by Jordan</p></div><div class="markdown-body news-page"><div><h2 id="bank-tag-tabs">Bank tag tabs</h2>
+<p>Thanks to the tireless work of <a href="https://github.com/raiyni" native="">@raiyni</a>, and supporting work from
+<a href="https://github.com/deathbeam" native="">@deathbeam</a> and <a href="https://github.com/Abextm" native="">@Abextm</a>, we are proud
+to offer a new bank tag experience in bank tag tabs!</p>
+<p><img src="/img/blog/1.4.21-Release/bank-tag-tabs-intro.gif" alt="Bank tag tabs: adding and selecting tabs"></p>
+<p>As indicated above, tabs can be created for any number of tags by clicking the "+" button in the
+upper-left-hand corner of the bank interface, and selecting these tabs will display items tagged
+with that tab's tag. More information regarding its features and functionalities can be found <a href="https://github.com/runelite/runelite/wiki/Bank-Tags#using-tag-tabs" native="">by
+browsing the Bank Tags wiki
+page</a>.</p>
+<h2 id="master-clue-3-step-cryptic-solutions">Master clue 3-step cryptic solutions</h2>
+<p>The Clue Scroll plugin now displays solutions for master-level three step cryptic clues, removing
+steps from the overlay as they are completed. Thanks to
+<a href="https://github.com/eadgars-ruse" native="">@Eadgars-ruse</a> for submitting
+<a href="https://streamable.com/ujaar" native="">(and demonstrating in video form)</a> this feature!</p>
+<p><img src="/img/blog/1.4.21-Release/master-three-step-cryptic-clue-full.png" alt="Master-level three step cryptic clue solution">
+<img src="/img/blog/1.4.21-Release/master-three-step-cryptic-clue-partial.png" alt="Partial solution for master-level three step cryptic clue"></p>
+<h2 id="grand-exchange-partial-name-searching">Grand Exchange partial name searching</h2>
+<p>The Grand Exchange search panel and ingame <code>!price</code> command now allow for partial name searching,
+yielding better results than before. Thanks to <a href="https://github.com/Adam-" native="">@Adam-</a> for implementing
+this enhancement.</p>
+<p><img src="/img/blog/1.4.21-Release/grand-exchange-search-before-after.gif" alt="Grand exchange search results: before and after"></p>
+<h2 id="visual-improvements">Visual improvements</h2>
+<p>Thanks to <a href="https://github.com/Adam-" native="">@Adam-</a>, <a href="https://github.com/Monsterxsync" native="">@Monsterxsync</a>,
+<a href="https://github.com/psikoi" native="">@psikoi</a>, and
+<a href="https://github.com/SebastiaanVanspauwen" native="">@SebastiaanVanspauwen</a> respectively, a number of plugins
+have had their visuals updated, which can be seen below:</p>
+<ul>
+<li>The "To:" and "From:" in split private chat can now be recolored</li>
+<li>A toggle has been added to use default skill coloring for XP globe progress arcs</li>
+<li>XP globes' progress bar has been changed into an overlay directly on the globe to save space</li>
+<li>A chatbox background image has been added to the 2005 interface style</li>
+</ul>
+<p><img src="/img/blog/1.4.21-Release/recolored-split-private-chat-to-from.png" alt="Recolored &quot;To:&quot; and &quot;From:&quot; in split private chat">
+<img src="/img/blog/1.4.21-Release/xp-globes-default-skill-color.png" alt="XP globes default skill colors">
+<img src="/img/blog/1.4.21-Release/xp-globes-progress-overlay.png" alt="Updated XP globes progress overlay">
+<img src="/img/blog/1.4.21-Release/2005-chat-background.gif" alt="2005 interface chat background"></p>
+<p>The Camera Zoom plugin has been disabled until we can fix it for the update today.</p>
+<p>There are also several smaller improvements and bug fixes, including:</p>
+<ul>
+<li>The percentage completion component of the XP tracker is now accurate to two decimal places</li>
+<li>The 2010 interface style has had some tab icon offsets updated to be more accurate to the style</li>
+<li>Cavaliers will now display their buy limit in the grand exchange plugin</li>
+<li>Mouse tooltips should now properly be hidden whenever a RuneScape tooltip is displayed</li>
+<li>Chat notification highlight words now ignore leading and trailing space for highlight terms</li>
+<li>Regen meters should now be more accurate for the beginning and end of a regen cycle</li>
+<li>Overlays snapped above chatbox will now be rendered when text input or chat dialogs are open</li>
+<li>An option has been added to the boosts overlay to display in yellow when below the boost threshold</li>
+<li>Notifications have been added for highlighted ground items</li>
+<li>The Fairy ring plugin now remembers scroll position when re-opening the fairy ring menu</li>
+<li>The Slayer plugin will now update when assigned a task through partner slayer</li>
+<li>The NPC HP overlay has been updated to use a more accurate HP formula</li>
+<li>The Loot tracker no longer tries to add empty slots from Chambers of Xeric or Theatre of Blood</li>
+<li>The newly-added Al Kharid palace shortcuts have been added to the agility obstacle highlighter</li>
+<li>An idle alert should no longer trigger after casting most Lunar spells</li>
+<li>A toggle to send a notification upon the Ulitmate Force powerup spawning in Nightmare Zone has
+been added</li>
+<li>The Kingdom of Miscellania completion state check has been corrected</li>
+<li>Several bank tag editing edge cases have been fixed</li>
+</ul>
+<p>Enjoy!</p>
+<p>- Jordan</p>
+<h3 id="new-commits">New commits</h3>
+<p>We had 23 contributors this release!</p>
+<pre><code>Adam (7):
+      feed controller: move feed result fetch to spring scheduler
+      http service: return item names in price lookup
+      http-api: modify ItemPrice to contain id/name instead of Item
+      mixins: fix runelite message not being cleared on reused messages nodes
+      chat message manager: add support for coloring to/from
+      runelite-client: update for search api changes
+      ge search: cap max results at 100
+
+Bailey Townsend (1):
+      Add buy limit for cavalier hats to GE plugin (#5855)
+
+Eadgars-Ruse (2):
+      Fix and improve cryptic clues
+      Add solutions for 3 step cryptic master clues
+
+Eric White (1):
+      Increase XP tracker accuracy to 2 decimal places (#5845)
+
+GravitySalad (2):
+      Add additional search tags for interface styles and pve plugins
+      Change plugin search to include the plugin description
+
+Jeremy Plsek (1):
+      2010 styles: Fix emotes and music tab offsets (#5884)
+
+Jordan Atwood (1):
+      mouse tooltips: Don't add a tooltip if another is present
+
+Kamiel (3):
+      Fix chat notification highlight words split regex (#5798)
+      Change regen meter stroke end-cap style to CAP_BUTT
+      Fix snapped overlays above chatbox not being rendered
+
+Magic fTail (3):
+      Add support for making the boost colour yellow if below boost threshold
+      Update osrs wiki link
+      Stop CoX party size from showing before varb is loaded
+
+Marshall (1):
+      Add highlighted ground item notifications (#3647)
+
+Max Weber (7):
+      Add thread assertions to Widget
+      WidgetInspector: run on client thread
+      runelite-client: Make Widget::isHidden only run on client thread
+      Add thread assertion to getVar(Varbits)
+      runelite-client: Make getVar(Varbits) only run on the client thread
+      fairyring: Don't loose scroll position
+      timetracking: Show overview completion by tab, not implementation
+
+Monsterxsync (1):
+      Add default skill coloring to XP globe arcs
+
+Nathen Sample (4):
+      Improve readability of stackformatter tests
+      Add support for partner assignment to slayer plugin (#5782)
+      Improve attack style plugin encapsulation (#5806)
+      Improve BA plugin encapsulation (#5807)
+
+Ron Young (9):
+      Add bank-related widget ids, scripts and varbits
+      Add script for managing current bank tab
+      Add method for getting keys based on prefix from ConfigManager
+      Add tag tabs to bank tags plugin
+      More accurate NPC hp overlay when max hp is known (#5528)
+      widget: expose setchildren (#5309)
+      Don't update tags if interface is force closed
+      Don't change the active tab if tags are being edited
+      Don't assume bank title is the same as search str because it truncate...
+
+Ruben Amendoeira (1):
+      XP Globes - Move progress bar display from tooltip to globe (#5856)
+
+Sebastiaan Vanspauwen (1):
+      Interface plugin: Added 2005 chatbox
+
+Tomas Slusny (15):
+      Fix Raids plugin varbit access not happening on client thread
+      Move map clue checking to MenuOptionClicked
+      Skip empty spots in Loot Tracker when getting items
+      Fix NPE in Miscellania plugin on DC
+      Use NpcSpawned/Despawned events for checking clue NPCs
+      Move clue inventory/equipment assignment to ItemContainerChanged
+      Inverse findClueScroll conditions
+      Do not set hint arrows for object clue scroll
+      Correctly highlight ObjectClueScroll for single location
+      Remove clue scroll timeout
+      Add executor service logger that logs exceptions
+      Remove unnecessary calls to RunnableExceptionLogger
+      Add method for standardizing text input to Text
+      Use TAG_SEARCH const instead of hardcoding "tag:" in Bank Tags
+      Properly reset search when deleting active tag tab
+
+Tyler Nichols (2):
+      Remove unused variable "rank" in HiscorePanel (#5843)
+      Do not show quantity value for items with no GE/HA value (#5850)
+
+forsco (4):
+      Add new Al-Kharid palace agility shortcuts (#5800)
+      Remove idle alerts from Lunar Spells shared animation (#5863)
+      Fix spelling of Burthorpe Games Room in Discord Rich Presence (#5886)
+      Correct Burthorpe spelling for Discord rich presence
+
+mikek2 (1):
+      Add ultimate force notification trigger to NMZ plugin (#5790)
+
+robinwithes (1):
+      Fix NPE in Grand Exchange search caused by null entry (#5911)
+
+trimbe (1):
+      Kingdom Plugin: fix throne completion state check (#5874)
+</code></pre></div></div></div></section><section id="footer"><div class="content-section"><footer><hr>Developed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://reactjs.org/">React</a> and <a href="https://fontawesome.com/">Font Awesome</a><a href="http://localhost:8000/atom.xml" class="float-right"><i class="fas fa-rss"></i> Subscribe via RSS</a></footer></div></section></div></div></div><script>!function(e){function c(c){for(var f,t,n=c[0],o=c[1],b=c[2],u=0,l=[];u<n.length;u++)t=n[u],Object.prototype.hasOwnProperty.call(a,t)&&a[t]&&l.push(a[t][0]),a[t]=0;for(f in o)Object.prototype.hasOwnProperty.call(o,f)&&(e[f]=o[f]);for(i&&i(c);l.length;)l.shift()();return r.push.apply(r,b||[]),d()}function d(){for(var e,c=0;c<r.length;c++){for(var d=r[c],f=!0,t=1;t<d.length;t++){var o=d[t];0!==a[o]&&(f=!1)}f&&(r.splice(c--,1),e=n(n.s=d[0]))}return e}var f={},t={1:0},a={1:0},r=[];function n(c){if(f[c])return f[c].exports;var d=f[c]={i:c,l:!1,exports:{}};return e[c].call(d.exports,d,d.exports,n),d.l=!0,d.exports}n.e=function(e){var c=[];t[e]?c.push(t[e]):0!==t[e]&&{3:1,4:1,5:1,7:1,8:1,9:1,10:1,11:1,12:1,13:1}[e]&&c.push(t[e]=new Promise((function(c,d){for(var f="static/css/"+({}[e]||e)+"."+{2:"31d6cfe0",3:"e97f8900",4:"1b00b023",5:"1b00b023",7:"774c0805",8:"8de28d44",9:"491d18ac",10:"e8fb13ba",11:"9d3d0b12",12:"a6c5b147",13:"f5bab9e8",14:"31d6cfe0",15:"31d6cfe0",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",76:"31d6cfe0",77:"31d6cfe0",78:"31d6cfe0",79:"31d6cfe0",80:"31d6cfe0",81:"31d6cfe0",82:"31d6cfe0",83:"31d6cfe0",84:"31d6cfe0",85:"31d6cfe0",86:"31d6cfe0",87:"31d6cfe0",88:"31d6cfe0",89:"31d6cfe0",90:"31d6cfe0",91:"31d6cfe0",92:"31d6cfe0",93:"31d6cfe0",94:"31d6cfe0",95:"31d6cfe0",96:"31d6cfe0",97:"31d6cfe0",98:"31d6cfe0",99:"31d6cfe0",100:"31d6cfe0",101:"31d6cfe0",102:"31d6cfe0",103:"31d6cfe0",104:"31d6cfe0",105:"31d6cfe0",106:"31d6cfe0",107:"31d6cfe0",108:"31d6cfe0",109:"31d6cfe0",110:"31d6cfe0",111:"31d6cfe0",112:"31d6cfe0",113:"31d6cfe0",114:"31d6cfe0",115:"31d6cfe0",116:"31d6cfe0",117:"31d6cfe0",118:"31d6cfe0",119:"31d6cfe0",120:"31d6cfe0",121:"31d6cfe0",122:"31d6cfe0",123:"31d6cfe0"}[e]+".chunk.css",a=n.p+f,r=document.getElementsByTagName("link"),o=0;o<r.length;o++){var b=(i=r[o]).getAttribute("data-href")||i.getAttribute("href");if("stylesheet"===i.rel&&(b===f||b===a))return c()}var u=document.getElementsByTagName("style");for(o=0;o<u.length;o++){var i;if((b=(i=u[o]).getAttribute("data-href"))===f||b===a)return c()}var l=document.createElement("link");l.rel="stylesheet",l.type="text/css",l.onload=c,l.onerror=function(c){var f=c&&c.target&&c.target.src||a,r=new Error("Loading CSS chunk "+e+" failed.\n("+f+")");r.code="CSS_CHUNK_LOAD_FAILED",r.request=f,delete t[e],l.parentNode.removeChild(l),d(r)},l.href=a,document.getElementsByTagName("head")[0].appendChild(l)})).then((function(){t[e]=0})));var d=a[e];if(0!==d)if(d)c.push(d[2]);else{var f=new Promise((function(c,f){d=a[e]=[c,f]}));c.push(d[2]=f);var r,o=document.createElement("script");o.charset="utf-8",o.timeout=120,n.nc&&o.setAttribute("nonce",n.nc),o.src=function(e){return n.p+"static/js/"+({}[e]||e)+"."+{2:"c3855914",3:"66f64cd3",4:"a9f5c633",5:"05aba0e2",7:"ac363c23",8:"64d82626",9:"9be3d6a1",10:"a6531205",11:"bb217ca4",12:"d3bb5f6f",13:"2746d555",14:"d93b03e6",15:"b8b6aea7",16:"5b0c01fd",17:"5b107bb8",18:"313ab530",19:"4030d2d3",20:"54b913cd",21:"f9141813",22:"ad06092e",23:"5eb5097d",24:"046315cf",25:"81418ac9",26:"b08e0c83",27:"cd728039",28:"f0603c11",29:"86815310",30:"41027d10",31:"6a7f8621",32:"d69ca1d2",33:"a187a0a6",34:"e1efbb3f",35:"2c9c5761",36:"07bcbd04",37:"aabadb5c",38:"2c891845",39:"460a3d9a",40:"e1cd3c35",41:"c89382be",42:"5d8a71e1",43:"f24ab0e7",44:"618801bd",45:"777db8ad",46:"0568977a",47:"f1d2cdce",48:"573b80c9",49:"847fa428",50:"6e533923",51:"8c554512",52:"4e137019",53:"970f92ef",54:"10bc8c9e",55:"725aa57e",56:"a7cd1eb3",57:"7e2369a7",58:"a3896661",59:"156d3fc9",60:"0d2b7194",61:"a7ca4a70",62:"6706ba4e",63:"cb60e68e",64:"1675c36d",65:"bc799a36",66:"70114127",67:"d86bb71e",68:"d466f87c",69:"2bd0c248",70:"29371fe0",71:"9c2e2c0d",72:"93be866e",73:"80453fd8",74:"225be8df",75:"b806726f",76:"d2c4add8",77:"0fe3310e",78:"6acd80ca",79:"f335e718",80:"2c5c30b5",81:"78dc8068",82:"a8820c4c",83:"255b09ff",84:"6a4c5f7f",85:"2bad62d1",86:"edd84ec4",87:"7522fe16",88:"a2fde7d8",89:"19bfa02c",90:"ba2f86a8",91:"136a59b4",92:"a921aea0",93:"1fc3ec75",94:"d0ada8d4",95:"5166c3d8",96:"2eb2421c",97:"3834bb30",98:"093455bc",99:"b1ddf04b",100:"92b36c2f",101:"c2eaf666",102:"17715da2",103:"d5ab7b83",104:"841a4531",105:"bfbcf4d5",106:"61aa2f73",107:"1117dc96",108:"7de23ffb",109:"8514f309",110:"0552b065",111:"5428487f",112:"55936f5c",113:"a0195376",114:"3991c9a6",115:"bf4b170a",116:"6268d09a",117:"2274f7a0",118:"6f16b73b",119:"82d4db27",120:"292aa7f6",121:"d876dd22",122:"5bf42508",123:"2f95d623"}[e]+".chunk.js"}(e);var b=new Error;r=function(c){o.onerror=o.onload=null,clearTimeout(u);var d=a[e];if(0!==d){if(d){var f=c&&("load"===c.type?"missing":c.type),t=c&&c.target&&c.target.src;b.message="Loading chunk "+e+" failed.\n("+f+": "+t+")",b.name="ChunkLoadError",b.type=f,b.request=t,d[1](b)}a[e]=void 0}};var u=setTimeout((function(){r({type:"timeout",target:o})}),12e4);o.onerror=o.onload=r,document.head.appendChild(o)}return Promise.all(c)},n.m=e,n.c=f,n.d=function(e,c,d){n.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:d})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,c){if(1&c&&(e=n(e)),8&c)return e;if(4&c&&"object"==typeof e&&e&&e.__esModule)return e;var d=Object.create(null);if(n.r(d),Object.defineProperty(d,"default",{enumerable:!0,value:e}),2&c&&"string"!=typeof e)for(var f in e)n.d(d,f,function(c){return e[c]}.bind(null,f));return d},n.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(c,"a",c),c},n.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},n.p="/",n.oe=function(e){throw console.error(e),e};var o=this["webpackJsonprunelite.net"]=this["webpackJsonprunelite.net"]||[],b=o.push.bind(o);o.push=c,o=o.slice();for(var u=0;u<o.length;u++)c(o[u]);var i=b;d()}([])</script><script src="/static/js/6.cb10a93c.chunk.js"></script><script src="/static/js/main.a0b40bc2.chunk.js"></script></body></html>
